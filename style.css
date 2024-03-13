@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  font-size: 16px;
+}
+img {
+  object-fit: cover;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+}
+#banner,
+section {
+  padding: 1.5rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation img {
+  width: 25%;
+}
+.navigation nav {
+  display: flex;
+  gap: 2.5em;
+  font-size: 0.75rem;
+  font-family: "Raleway", sans-serif;
+}
+.hero {
+  margin-block: 7rem;
+  gap: 2rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.hero .hero_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  color: hsl(243, 87%, 12%);
+}
+.hero_text h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+}
+.hero_text p {
+  line-height: 1.3;
+}
+.hero_text form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero_text form input,
+section[aria-labelledby="early_access"] form input {
+  padding: 0.7rem;
+  border-radius: 3px;
+  outline: none;
+}
+.hero_text form label p{
+  font-size: .6rem;
+  text-align: left;
+  padding-top: .2rem;
+  color: #f87171;
+}
+.hero_text form input[type="text"] {
+  border: 1px solid gray;
+  padding-inline-start: 1.2rem;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.hero_text form input[type="text"]::placeholder {
+  color: hsl(0, 0%, 75%);
+  opacity: 1;
+}
+.hero_text form input[type="submit"] {
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+.hero_text form input[type="submit"]:hover{
+  opacity: .7;
+}
+
+section[aria-labelledby="stay_productive"] {
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: hsla(240, 80%, 98%, 0.863);
+  position: relative;
+}
+section[aria-labelledby="stay_productive"]::before {
+  content: "";
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: -4%;
+  left: 0;
+  background-image: url("./images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 150%;
+}
+.stay_productive_text {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: hsl(243, 87%, 12%);
+}
+.stay_productive_text h2 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+}
+.stay_productive_text p:not(article p){
+  font-size: .9rem;
+}
+.stay_productive_text button {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  color: hsl(170, 45%, 43%);
+  border-bottom: 1px solid;
+  width: fit-content;
+  padding-bottom: 0.3rem;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.stay_productive_text button:hover{
+  opacity: .7; 
+}
+.btn_group {
+  display: flex;
+  justify-content: center;
+}
+.stay_productive_text article {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
+  border-radius: 5px;
+  margin: 1rem 1rem 0;
+  background-color: white;
+  color: hsl(243, 87%, 12%);
+}
+.stay_productive_text article p:nth-child(2):not(:last-child) {
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.9;
+}
+.bio {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding-top: 1rem;
+}
+.bio img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.bio p:first-child {
+  font-weight: 700;
+}
+.bio p:last-child {
+  font-size: 0.7rem;
+}
+section[aria-labelledby="early_access"] {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(0, 0%, 75%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-block: 5rem;
+}
+section[aria-labelledby="early_access"] div:first-child {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+section[aria-labelledby="early_access"] div:first-child h2 {
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+section[aria-labelledby="early_access"] div:first-child p {
+  font-size: 300;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+section[aria-labelledby="early_access"] form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 90%;
+  font-size: 0.9rem;
+}
+section[aria-labelledby="early_access"] form label p{
+  font-size: .6rem;
+  padding-top: .2rem;
+}
+section[aria-labelledby="early_access"] form input[type="submit"] {
+  background-color: hsl(224, 93%, 58%);
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: white;
+  cursor: pointer;
+}
+section[aria-labelledby="early_access"] form input[type="submit"]:hover{
+  opacity: .7;
+}
+section[aria-labelledby="early_access"] form input[type="text"] {
+  padding-inline-start: 1rem;
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 39%);
+  width: 100%;
+  border: 1px solid;
+}
+section[aria-labelledby="early_access"] form input[type="text"]::placeholder{
+  color: hsl(0, 0%, 75%);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1.5rem;
+  gap: 2rem;
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  position: relative;
+  font-size: .9rem;
+}
+img[src="./images/footer-logo.svg"] {
+  width: 40%;
+}
+footer ul:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+footer ul:nth-child(2) li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer ul:nth-child(2) li ul li{
+  cursor: pointer;
+  width: fit-content;
+}
+footer ul:nth-child(2) li ul li:hover{
+  color: hsl(224, 93%, 58%);
+}
+footer ul:nth-child(2) li address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-style: normal;
+}
+footer ul:nth-child(2) li address a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer ul:nth-child(2) li nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.social_icon:hover > path{
+  fill: hsl(224, 93%, 58%);
+
+}
+
+
+
+@media screen and (min-width:1024px) {
+  .navigation img, img[src="./images/footer-logo.svg"] {
+    width: 12%;
+  }
+  #banner,
+section, footer {
+  padding: 5.5rem;
+}
+.hero, section[aria-labelledby="stay_productive"] {
+ flex-direction: row-reverse;
+ align-items: center;
+ justify-content: space-between;
+ gap: 5rem;
+}
+
+.hero img[src="/images/illustration-1.svg"], img[src="/images/illustration-2.svg"]{
+  flex: 1;
+  width: 50%;
+  z-index: 2;
+}
+.hero .hero_text, .stay_productive_text{
+  width: 50%;
+  flex: 1;
+  z-index: 2;
+}
+
+section[aria-labelledby="stay_productive"]::before{
+  background-image: url('./images/bg-curve-desktop.svg');
+  top: -10%;
+}
+section[aria-labelledby="stay_productive"]{
+  padding-block: 3.5rem;
+}
+.hero_text h1{
+  text-align: left;
+}
+.hero_text p{
+  text-align: left;
+}
+.stay_productive_text h2{
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.4rem;
+}
+section[aria-labelledby="early_access"]{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section[aria-labelledby="early_access"] div:first-child{
+  width: 40%;
+  text-align: left !important;
+}
+section[aria-labelledby="early_access"] form{
+  width: 40%;
+}
+section[aria-labelledby="early_access"] form input[type="submit"]{
+  width: 45%;
+}
+footer ul:nth-child(2){
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline-end: 5.5rem;
+}
+
+}
+
+
+
+
+
+@media screen and (min-width:1440px) {
+  :root{
+    font-size: 18px;
+  }
+.hero, section[aria-labelledby="stay_productive"] {
+ gap: 7rem;
+}
+.navigation nav{
+  font-size: .85rem;
+}
+
+.hero_text h1{
+  font-size: 1.65rem;
+  text-align: left;
+}
+.stay_productive_text h2{
+  font-size: 1.6rem;
+}
+
+
+}
