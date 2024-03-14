@@ -192,7 +192,7 @@ section[aria-labelledby="stay_productive"]::before {
 }
 section[aria-labelledby="early_access"] {
   background-color: hsl(238, 22%, 44%);
-  color: hsl(0, 0%, 75%);
+  color: hsl(0, 0%, 93%);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -319,7 +319,7 @@ section, footer {
  gap: 5rem;
 }
 
-.hero img[src="/images/illustration-1.svg"], img[src="/images/illustration-2.svg"]{
+.hero img[src="./images/illustration-1.svg"], img[src="./images/illustration-2.svg"]{
   flex: 1;
   width: 50%;
   z-index: 2;
