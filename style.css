@@ -184,7 +184,7 @@ section[aria-labelledby="stay_productive"]::before {
   height: 30px;
   border-radius: 50%;
 }
-.bio p:first-child {
+.bio h3 {
   font-weight: 700;
 }
 .bio p:last-child {
@@ -290,7 +290,7 @@ footer ul:nth-child(2) li address a {
   align-items: center;
   gap: 1rem;
 }
-footer ul:nth-child(2) li nav {
+footer ul:nth-child(2) li menu {
   width: 100%;
   display: flex;
   align-items: center;
